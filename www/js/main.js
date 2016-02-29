@@ -5,7 +5,7 @@ $(document).on("pagecreate","#pageone",function(){
 $(document).on("pageshow","#heartrate",function(){
 		$.ajax({
 		  type: 'GET',
-		  url: base_uri+'heart/date/2015-03-01.json',
+		  url: base_uri+'heart/date/today.json',
 		  crossDomain: true,
 		  beforeSend: function(xhr) {
 			xhr.setRequestHeader('Authorization', 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTcyNzA5ODQsInNjb3BlcyI6Indwcm8gd2xvYyB3bnV0IHdzbGUgd3NldCB3aHIgd3dlaSB3YWN0IHdzb2MiLCJzdWIiOiIzVDZXODQiLCJhdWQiOiIyMjdINkIiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTY2NjYxODR9.FSaih_b--dnThSepMd5zdqoChqbYWDKe5sDsJ7mjkfA');
@@ -21,7 +21,7 @@ $(document).on("pageshow","#heartrate",function(){
 $(document).on("pageshow","#activity",function(){
 	$.ajax({
 		  type: 'GET',
-		  url: base_uri+'activities/date/2016-02-27.json',
+		  url: base_uri+'activities/date/today.json',
 		  crossDomain: true,
 		  beforeSend: function(xhr) {
 			xhr.setRequestHeader('Authorization', 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJleHAiOjE0NTcyNzA5ODQsInNjb3BlcyI6Indwcm8gd2xvYyB3bnV0IHdzbGUgd3NldCB3aHIgd3dlaSB3YWN0IHdzb2MiLCJzdWIiOiIzVDZXODQiLCJhdWQiOiIyMjdINkIiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJpYXQiOjE0NTY2NjYxODR9.FSaih_b--dnThSepMd5zdqoChqbYWDKe5sDsJ7mjkfA');
