@@ -60,6 +60,9 @@ body {
                                    /* offset horizontal: half of text area width */
 }
 
+#pageone,#activity,#heartrate{
+	font-size:50px;
+}
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
