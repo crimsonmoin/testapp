@@ -2,7 +2,7 @@ var base_uri="https://api.fitbit.com/1/user/-/";
 $(document).on("pagecreate","#pageone",function(){
 	
 });
-$(document).on("pageshow","#heartrate",function(){
+$(document).on("pagecreate","#heartrate",function(){
 		$.ajax({
 		  type: 'GET',
 		  url: base_uri+'heart/date/today.json',
@@ -13,12 +13,12 @@ $(document).on("pageshow","#heartrate",function(){
 		  success:function(data){
 			$.each( data.average, function( key, val ) {
 				var tag="<tr><td>"+val.tracker+"</td><td>"+val.heartRate+"</td></tr>";
-				$(tag).appendTo("table tbody");
+				$(tag).appendTo("#tbl1 tbody");
 			});
 		  }
 		});
 });
-$(document).on("pageshow","#activity",function(){
+$(document).on("pagecreate","#activity",function(){
 	$.ajax({
 		  type: 'GET',
 		  url: base_uri+'activities/date/today.json',
@@ -32,7 +32,7 @@ $(document).on("pageshow","#activity",function(){
 				tag+="<tr><td>Calories Out</td><td>"+val.caloriesOut+"</td></tr>";
 				tag+="<tr><td>Distance</td><td>"+val.distance+"</td></tr>";
 				tag+="<tr><td>Steps</td><td>"+val.steps+"</td></tr>";
-				$(tag).appendTo("table tbody");
+				$(tag).appendTo("#tbl2 tbody");
 		  }
 		});
 });
