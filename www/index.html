@@ -7,45 +7,239 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
         
-        <title>Test Fitbit</title>
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <title>Health App</title>
+		<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
 		<link rel="stylesheet" type="text/css" href="css/index.css" />
     </head>
     <body>
-        <div data-role="page" id="pageone" data-theme="b">
+        <div data-role="page" id="pageone" data-theme="a">
+		<div data-role="header">
+			<h2>Health App</h2>
+		</div>
 			<div data-role="main" class="ui-content">
-				<h2>API's</h2>
+				
 				<ul data-role="listview">
 				  <li><a href="#heartrate">Heart Rate</a></li>
-				  <li><a href="#activity">Activity Goals</a></li>
+				  <li><a href="#activity2">Activity</a></li>
+				  <li><a href="#sleep">Sleep</a></li>
+				  <li><a href="#bod">Body</a></li>
+				  <li><a href="#food">Food Plan</a></li>
+				  <li><a href="#diet">Diet Plan</a></li>
+				  <li><a href="#ortho">Orthopedic Plan</a></li>
 				</ul>
 			</div>
 		</div> 
-		<div data-role="page" id="heartrate" data-theme="b">
+		<div data-role="page" id="heartrate" data-theme="a">
+		<div data-role="header">
+			<h2>Health App</h2>
+		</div>
 			<div data-role="main" class="ui-content">
 				<table data-role="table" id="tbl1" class="ui-responsive">
 				  <thead>
-					<tr>
+				  <tr>
 					  <th>Heart Rate</th>
 					  <th>Tracker</th>
 					</tr>
 				  </thead>
 				  <tbody>
+				  <tr><td>Resting heart rate</td><td>100</td></tr>
+
+					<tr><td>Normal Heart rate</td><td>112</td></tr>
+
+					<tr><td>Exertive Heart rate</td><td>125</td></tr>
 				  </tbody>
 				</table>
+				<div>
+				<h3>Symptoms:</h3><p>Chest pain/pressure, Shortness of breath ( with stress, rest or lying down), 
+						 Blue fingernails, Leg pain, Shortness of breadth, Blue fingernails, Leg pain/swelling and Shortness of breadth<p><br> 
+						<h1>Causes:</h1><br> 
+						<h3>Sedentary Lifestyle:-</h3><p>Sedentary activities include sitting, reading, watching television, playing video games, and computer use for much of the day with little or no vigorous physical exercise.</p><br> 
+						<h3>Exercise:-</h3><p>Take stairs instead of elevator,Walk break at any time,Play sports instead of indoor entertainment.</p><br> 
+						<h3>Physical inactivity:-</h3><p>Requires regular exercises,30 minutes’ walk,Moderate aerobics and workout.</p><br> 
+						<h3>Exercise:-</h3><p>Take stairs instead of elevator,Walk break at any time,Play sports instead of indoor entertainment.</p><br> 
+						<h3>Hereditary factor:-</h3><p>Your family history also gives chances of cardiovascular risk factors, cholesterol problem, obesity etc.</p><br> 
+						<h3>Exercise:-</h3><p>Follow other recommendations.</p><br> 
+						<h3>High blood pressure:-</h3><p>Blood pressure >140/90.</p><br> 
+						<h3>Exercise:-</h3><p>Take healthy diet,Take diet rich in whole grains, fruits, vegetables, low-fat dairy products and low saturated fat,Reduce sodium intake in diet,Reduce intake of caffeine.</p><br> 
+						<h3>Diabetes:-</h3><p>Fasting sugar level>110.</p><br> 
+						<h3>Exercise:-</h3><p>Regular walk,Take diet lower in calories, saturated fat, trans fat, sugar and salt,Eat foods with more fiber like cereals, porridge and whole wheat flour.</p><br> 
+						<h3>Overweight:-</h3><p>Body Mass Index ( BMI)> 25.</p><br> 
+						<h3>High blood pressure:-</h3><p>Avoid oil, sugar and all bakery products,More intake of protein,Eat fruits & vegetables.</p>
+				</div>
 			</div>
 		</div> 
-		<div data-role="page" id="activity" data-theme="b">
+		<div data-role="page" id="activity2" data-theme="a">
+		<div data-role="header">
+			<h2>Health App</h2>
+		</div>
 			<div data-role="main" class="ui-content">
 				<table data-role="table" id="tbl2" class="ui-responsive">
+				  <thead>
+				  <tr>
+					</tr>
+				  </thead>
 				  <tbody>
+				<tr><td>Calories</td><td>442</td></tr>
+
+					<tr><td>CaloriesBMR</td><td> 2124</td></tr>
+
+					<tr><td>CaloriesOut</td><td> 2566</td></tr>
+
+					<tr><td><b>Activity</b></td><td><b> Distance</b></td></tr>
+
+					<tr><td>Tracker </td><td>4.02</td></tr>
+
+					<tr><td>Total </td><td>4.02</td></tr>
+
+					<tr><td>Very Active </td><td>2.23</td></tr>
+
+					<tr><td>Moderately Active </td><td>1.31</td></tr>
+
+					<tr><td>Lightly Active </td><td>3.31</td></tr>
+
+					<tr><td>Sedentary Active </td><td>3.49</td></tr>
+
+					<tr><td>Total steps</td><td> 5122</td></tr>
 				  </tbody>
 				</table>
+				<div>
+				
+				</div>
 			</div>
 		</div> 
+		<div data-role="page" id="sleep" data-theme="a">
+		<div data-role="header">
+			<h2>Health App</h2>
+		</div>
+			<div data-role="main" class="ui-content">
+				<table data-role="table" id="tbl2" class="ui-responsive">
+				  <thead>
+				  <tr>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Start Time</td><td>12:24am</td></tr>
+					<tr><td>End Time</td><td>07:00am</td></tr>
+				  </tbody>
+				</table>
+				<div>
+				
+				</div>
+			</div>
+		</div> 
+		<div data-role="page" id="bod" data-theme="a">
+		<div data-role="header">
+			<h2>Health App</h2>
+		</div>
+			<div data-role="main" class="ui-content">
+				<table data-role="table" id="tbl2" class="ui-responsive">
+				  <thead>
+				  <tr>
+				  <th>Date</th><th> Fat</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					
 
+					<tr><td>2016-08-01</td><td> 25</td></tr>
+
+					<tr><td>2016-08-02</td><td> 24.5</td></tr>
+
+					<tr><td>2016-08-03 </td><td>22.5</td></tr>
+
+					<tr><td>2016-08-04 </td><td>25</td></tr>
+					<tr><td>2016-08-05</td><td> 24.5</td></tr>
+
+					<tr><td>2016-08-06 </td><td>25</td></tr>
+
+					<tr><td>2016-08-07 </td><td>24.5</td></tr>
+				  </tbody>
+				</table>
+				<div>
+				
+				</div>
+			</div>
+		</div> 
+		<div data-role="page" id="food" data-theme="a">
+			<div data-role="main" class="ui-content">
+				<table data-role="table" id="tbl2" class="ui-responsive">
+				  <thead>
+				  <tr>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr><td>Calories BMR</td><td>2124</td></tr>
+					<tr><td>Calories Out</td><td>2566</td></tr>
+				  </tbody>
+				</table>
+				<div>		
+				</div>
+			</div>
+		</div>
+		<div data-role="page" id="diet" data-theme="a">
+		<div data-role="header">
+			<h2>Health App</h2>
+		</div>
+			<div data-role="main" class="ui-content">
+				<select id="sel">
+					<option value="0">--Select--</option>
+					<option value="1">Reduced Hair Growth</option>
+					<option value="2">Night Blindness</option>
+					<option value="3">Loss of appetite</option>
+					<option value="4">Dry,rough skin</option>
+					<option value="5">lowered resistance of infection</option>
+					<option value="6">Dry eyes</option>
+					<option value="7">Muscle weakness</option>
+					<option value="8">Depression</option>
+					<option value="9">Muscle cramps</option>
+					<option value="10">Anxiety</option>
+					<option value="11">Easy bruising</option>
+					<option value="12">Bleeding gums</option>
+					<option value="13">Bone Softening</option>
+					<option value="14">Overweight</option>
+					<option value="15">Age spots</option>
+					<option value="16">cataracts</option>
+					<option value="17">Leg cramps</option>
+					<option value="18">Slow healing</option>
+					<option value="19">Brain function</option>
+					<option value="20">Tooth decay</option>
+					<option value="21">Numbness in hands & feets</option>
+					<option value="22">Weakness</option>
+					<option value="23">Fatigue</option>
+					<option value="24">Pale Skin</option>
+					<option value="25">Headache</option>
+					<option value="26">Shortness of breadth</option>
+					<option value="27">Brittle nails,cracked lips</option>
+					<option value="28">Hair loss</option>
+					<option value="29">Constant craving</option>
+					<option value="30">Muscle and/or joint pain</option>
+					<option value="31">Sleep problem</option>
+					<option value="32">Dizziness</option>
+					<option value="33">Fatigue</option>
+				</select>
+				<div class="con">		
+				</div>
+			</div>
+		</div> 
+		<div data-role="page" id="ortho" data-theme="a">
+		<div data-role="header">
+			<h2>Health App</h2>
+		</div>
+			<div data-role="main" class="ui-content">
+				<select id="sel1">
+					<option value="0">--Select--</option>
+					<option value="1">Childhood</option>
+					<option value="2">Adolescence</option>
+					<option value="3">Young Age</option>
+					<option value="4">Middle Age</option>
+					<option value="5">Old Age</option>
+				</select>
+				<div class="con1">		
+				</div>
+			</div>
+		</div> 
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script src="js/jquery.mobile-1.4.5.min.js"></script>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>

@@ -1,7 +1,7 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.test.fit" version="1.0.0">
-  <name>TestApp</name>
-  <description>Hello World sample application that responds to the deviceready event.</description>
-  <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
+  <name>Health App</name>
+  <description>Fitbit Sample.</description>
+  <author href="http://moinwebdev.com" email="info@moinwebdev.com">MWD</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
   <preference name="orientation" value="default"/>
