@@ -1,6 +1,6 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.test.fit" version="1.0.0">
   <name>Health App</name>
-  <description>Fitbit Sample.</description>
+  <description>Fitbit Sample</description>
   <author href="http://moinwebdev.com" email="info@moinwebdev.com">MWD</author>
   <content src="index.html"/>
   <preference name="permissions" value="none"/>
